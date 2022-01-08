@@ -172,6 +172,7 @@ footer{
 
 a{
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 #container{
@@ -179,8 +180,8 @@ a{
     background-color: #51260E;
     align-content: center;
     justify-content: center;
- align-items: baseline;
-    
+    align-items: baseline;
+    padding-left: 30px;
     
 }
 .icones-logo{
@@ -190,16 +191,74 @@ a{
 }
 
 .textos-p{
-padding:3px;
+    padding:3px;
 }
 
 .link-redes-sociais{
-padding: 5px;
+    padding: 5px;
 }
 
 .subtitulos-H3-footer{
-padding: 5px;
-margin-right: 15px;
+    padding: 5px;
+    margin-right: 15px;
 }
 
 
+@media (max-device-width: 400px){
+    body{
+        display: block;
+    }
+
+    /* header */
+
+    .container-header{
+        width: 90vw;
+        padding: 0 15px;
+        padding-top: 30px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logomarca{
+        width: 90vw;
+        height: 50vh;
+        margin-top: -30px;
+        margin-left: 0px;
+        
+    }
+
+    .lista{
+        display: none;
+    }
+
+    .busca{
+        display: none;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    /* main */
+
+    .div-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-produtos{
+        margin-bottom: 20px;
+    }
+
+    /* footer */
+
+    #container{
+        width: 100vw;
+        height: 760px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
